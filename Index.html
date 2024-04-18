@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&R Creations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container min-h-screen bg-[url('Images/bg.png')] bg-center bg-cover">
+        <nav class="bg-transparent p-5 flex justify-between items-center">
+            <a href=""><img src="Images/popcorn.svg" alt="Movies.cc Logo" class="w-10"></a>
+            <h1 class="font-semibold text-white">D&R Films</h1>
+            <a href="Login.html"><button type="button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Sign In</button></a>
+        </nav>
+        <section class="h-screen flex justify-center items-center">
+            <div class=" backdrop-filter backdrop-blur-lg bg-gray-100 bg-opacity-25 h-auto w-96 p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl mb-4">Aanmelden</h2>
+            <form action="phpexecutables/signup_process.php" method="POST">
+                <div class="mb-4">
+                    <input type='text' name='gebruikersnaam' class="placeholder:text-black w-full px-4 py-2 bg-white bg-opacity-50 border rounded-lg focus:outline-none focus:border-blue-500" placeholder='Gebruikersnaam'>
+                </div>
+                <div class="mb-4">
+                    <input type='text' name='email' class="placeholder:text-black w-full px-4 py-2 bg-white bg-opacity-50 border rounded-lg focus:outline-none focus:border-blue-500" placeholder='E-mail'>
+                </div>
+                <div class="mb-4">
+                    <input type='password' name='wachtwoord' class="placeholder:text-black w-full px-4 py-2 bg-white bg-opacity-50 border rounded-lg focus:outline-none focus:border-blue-500" placeholder='Wachtwoord'>
+                </div>
+                <button type="submit" name="Inloggen" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Aanmelden
+                </button>
+            </form>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-black py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white">&copy; 2024 Alle rechten voorbehouden <a href="#" class="text-blue-500">D&R Films</a></p>
+                <div></div>
+                <img src="Images/footer-bottom-img.png" alt="Online banking Companies" class="mt-4 md:mt-0">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
